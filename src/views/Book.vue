@@ -3,7 +3,7 @@
     <v-row no-gutters class="mx-10">
       <v-col sm="10" class="px-11 pt-10 mx-auto ">
         <v-card class="pa-2">
-          <img class="image" :src="book.imgUrl" />
+          <v-img class="image" :src="book.imgUrl" />
           <v-card-actions class="pb-0">
             <v-row class="mt-1 mx-1">
               <v-col sm="2">
@@ -106,7 +106,6 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 800px;
   object-fit: cover;
 }
 </style>
