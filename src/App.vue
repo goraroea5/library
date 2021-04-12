@@ -1,32 +1,35 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app id="inspire">
+    <v-app-bar app>
+      <router-link style="text-decoration: none !important;" to="/">
+        <v-toolbar-title>
+          <h1 class="headline">ระบบร้านหนังสือ</h1>
+        </v-toolbar-title>
+      </router-link>
+    </v-app-bar>
+    <v-main class="main">
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
+<script>
+export default {
+  data: () => ({
+    drawer: null,
+    items: [
+      { title: "หน้าแรก", icon: "mdi-home", link: "/" },
+      { title: "เพิ่มหนังสือ", icon: "mdi-note-plus", link: "/addbook" },
+    ],
+  }),
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.main {
+  background: #fbe9e7;
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.router-link {
+  text-decoration: none !important;
 }
 </style>

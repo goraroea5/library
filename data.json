@@ -1,0 +1,15 @@
+{
+  "data": {
+    "books": [
+      {
+        "id": 1,
+        "img": "https://images-se-ed.com/ws/Storage/Originals/978616/568/9786165685375L.jpg?h=4799137911424c3304d498918a0e94a6",
+        "name": "testBook",
+        "tag": "Cartoon",
+        "des": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque fuga, laudantium maxime illo vel ipsa eligendi alias provident in voluptate?",
+        "price": 200,
+        "stock": 100
+      }
+    ]
+  }
+}
